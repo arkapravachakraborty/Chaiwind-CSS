@@ -1,0 +1,31 @@
+{
+  "name": "chaiwinddev",
+  "version": "1.0.0",
+  "description": "A lightweight, inline Tailwind-like CSS utility library",
+  "main": "src/index.js",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkapravachakraborty/Chaiwind-CSS.git"
+  },
+  "keywords": [
+    "css",
+    "inline",
+    "utility",
+    "dom",
+    "tailwind",
+    "chaiwinddev"
+  ],
+  "author": "Arkaprava Chakraborty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arkapravachakraborty/Chaiwind-CSS/issues"
+  },
+  "homepage": "https://github.com/arkapravachakraborty/Chaiwind-CSS#readme"
+}
