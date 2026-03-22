@@ -100,7 +100,7 @@ If you aren't using a bundler, you can use modern browser Import Maps to keep yo
 
 Here are the utility classes currently available in chaiwinddev. All classes must begin with the `chai-` prefix.
 
----
+
 
 ### Spacing (Margin, Padding, Gap)
 
@@ -122,7 +122,7 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-gap-2  
 - chai-gap-4  
 
----
+
 
 ### Typography
 
@@ -148,7 +148,7 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-text-center  
 - chai-text-left  
 
----
+
 
 ### Colors
 
@@ -171,7 +171,7 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-border-blue-500  
 - chai-border-yello-600  
 
----
+
 
 ### Flexbox & Grid
 
@@ -199,7 +199,7 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-grid-cols-2  
 - chai-grid-cols-3  
 
----
+
 
 ### Layout & Sizing
 
@@ -227,7 +227,7 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-overflow-hidden  
 - chai-overflow-y-auto  
 
----
+
 
 ### Borders
 
@@ -248,7 +248,6 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-ring-1  
 - chai-ring-2  
 
----
 
 ### Effects
 
@@ -266,7 +265,7 @@ Here are the utility classes currently available in chaiwinddev. All classes mus
 - chai-blur-sm  
 - chai-blur  
 
----
+
 
 ## 📄 License
 
