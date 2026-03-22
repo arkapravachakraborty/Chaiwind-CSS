@@ -1,0 +1,16 @@
+export const flexbox = {
+    'chai-flex': { display: 'flex' },
+    'chai-inline-flex': { display: 'inline-flex' },
+    'chai-flex-row': { flexDirection: 'row' },
+    'chai-flex-col': { flexDirection: 'column' },
+    'chai-items-start': { alignItems: 'flex-start' },
+    'chai-items-center': { alignItems: 'center' },
+    'chai-items-end': { alignItems: 'flex-end' },
+    'chai-justify-start': { justifyContent: 'flex-start' },
+    'chai-justify-center': { justifyContent: 'center' },
+    'chai-justify-between': { justifyContent: 'space-between' },
+    'chai-grid': { display: 'grid' },
+    'chai-grid-cols-1': { gridTemplateColumns: 'repeat(1, minmax(0, 1fr))' },
+    'chai-grid-cols-2': { gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' },
+    'chai-grid-cols-3': { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
+};

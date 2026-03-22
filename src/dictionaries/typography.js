@@ -1,0 +1,16 @@
+export const typography = {
+    'chai-text-xs': { fontSize: '0.75rem' },
+    'chai-text-sm': { fontSize: '0.875rem' },
+    'chai-text-base': { fontSize: '1rem' },
+    'chai-text-lg': { fontSize: '1.125rem' },
+    'chai-text-xl': { fontSize: '1.25rem' },
+    'chai-text-2xl': { fontSize: '1.5rem' },
+    'chai-font-normal': { fontWeight: '400' },
+    'chai-font-semibold': { fontWeight: '600' },
+    'chai-font-bold': { fontWeight: '700' },
+    'chai-leading-none': { lineHeight: '1' },
+    'chai-leading-tight': { lineHeight: '1.25' },
+    'chai-leading-normal': { lineHeight: '1.5' },
+    'chai-text-center': { textAlign: 'center' },
+    'chai-text-left': { textAlign: 'left' },
+};

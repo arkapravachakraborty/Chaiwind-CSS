@@ -1,0 +1,16 @@
+export const layout = {
+    'chai-block': { display: 'block' },
+    'chai-inline-block': { display: 'inline-block' },
+    'chai-hidden': { display: 'none' },
+    'chai-absolute': { position: 'absolute' },
+    'chai-relative': { position: 'relative' },
+    'chai-fixed': { position: 'fixed' },
+    'chai-w-full': { width: '100%' },
+    'chai-w-screen': { width: '100vw' },
+    'chai-h-full': { height: '100%' },
+    'chai-h-screen': { height: '100vh' },
+    'chai-max-w-md': { maxWidth: '28rem' },
+    'chai-max-w-lg': { maxWidth: '32rem' },
+    'chai-overflow-hidden': { overflow: 'hidden' },
+    'chai-overflow-y-auto': { overflowY: 'auto' },
+};
