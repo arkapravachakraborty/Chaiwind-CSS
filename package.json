@@ -1,6 +1,6 @@
 {
   "name": "chaiwinddev",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A lightweight, inline Tailwind-like CSS utility library",
   "main": "src/index.js",
   "type": "module",

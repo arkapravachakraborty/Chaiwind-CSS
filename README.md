@@ -4,12 +4,11 @@ A super lightweight, utility-first inline CSS engine built entirely with Vanilla
 
 Inspired by Tailwind CSS, **chaiwinddev** allows you to style your applications rapidly using predefined utility classes. It features a built-in `MutationObserver`, meaning it watches your DOM in real-time and applies styles the exact millisecond elements are rendered—making it perfectly compatible with dynamic frameworks like React, Next.js, or vanilla JS DOM manipulation.
 
-## ✨ Features
+## Features
 - **Zero Dependencies:** Pure Vanilla JavaScript.
 - **Framework Agnostic:** Works with React, Vue, Vanilla HTML, and more.
 - **Dynamic Styling:** Automatically styles newly injected DOM elements instantly.
 - **Conflict-Free:** All classes use the `chai-` prefix to prevent clashing with existing CSS.
-- **TypeScript Ready:** Includes built-in `.d.ts` types for intelligent editor autocompletion.
 
 ---
 
@@ -18,19 +17,23 @@ Inspired by Tailwind CSS, **chaiwinddev** allows you to style your applications 
 ### Method 1: npm (Recommended for React / Vite / Next.js)
 ```bash
 npm install chaiwinddev
-Method 2: CDN (For Vanilla HTML)
+```
+
+### Method 2: CDN (For Vanilla HTML)
 You can use chaiwinddev directly in the browser without installing anything via npm.
 
+```HTML
 HTML
 <script type="module">
   import { initDOMStyles } from '[https://unpkg.com/chaiwinddev@latest/src/index.js](https://unpkg.com/chaiwinddev@latest/src/index.js)';
   initDOMStyles();
 </script>
-🚀 Quick Start
+```
+## Quick Start
 Using with React / Vite
 Initialize the engine once at the very top of your application (e.g., in main.jsx or index.js). The engine will automatically style all components as they mount.
 
-JavaScript
+```JavaScript
 // src/main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -45,9 +48,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 );
+```
 Then, use the chai- prefixed classes directly inside your components:
 
-JavaScript
+```JavaScript
 // src/App.jsx
 export default function App() {
   return (
@@ -63,10 +67,11 @@ export default function App() {
     </div>
   );
 }
+```
 Using with Vanilla HTML & JS
 If you aren't using a bundler, you can use modern browser Import Maps to keep your imports clean.
 
-HTML
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,70 +95,179 @@ HTML
   </script>
 </body>
 </html>
-📚 Class Reference
-Here are the utility classes currently available in chaiwinddev. All classes must begin with the chai- prefix.
+```
+## Class Reference
 
-Spacing (Margin, Padding, Gap)
-Margin: chai-m-0, chai-m-1, chai-m-2, chai-m-4
+Here are the utility classes currently available in chaiwinddev. All classes must begin with the `chai-` prefix.
 
-Padding: chai-p-0, chai-p-1, chai-p-2, chai-p-4
+---
 
-Gap: chai-gap-0, chai-gap-1, chai-gap-2, chai-gap-4
+### Spacing (Margin, Padding, Gap)
 
-Typography
-Size: chai-text-xs, chai-text-sm, chai-text-base, chai-text-lg, chai-text-xl, chai-text-2xl
+**Margin:**  
+- chai-m-0  
+- chai-m-1  
+- chai-m-2  
+- chai-m-4  
 
-Weight: chai-font-normal, chai-font-semibold, chai-font-bold
+**Padding:**  
+- chai-p-0  
+- chai-p-1  
+- chai-p-2  
+- chai-p-4  
 
-Line Height: chai-leading-none, chai-leading-tight, chai-leading-normal
+**Gap:**  
+- chai-gap-0  
+- chai-gap-1  
+- chai-gap-2  
+- chai-gap-4  
 
-Alignment: chai-text-center, chai-text-left
+---
 
-Colors
-Background: chai-bg-transparent, chai-bg-white, chai-bg-black, chai-bg-blue-500, chai-bg-red-500
+### Typography
 
-Text: chai-text-white, chai-text-black, chai-text-blue-500, chai-text-red-500
+**Size:**  
+- chai-text-xs  
+- chai-text-sm  
+- chai-text-base  
+- chai-text-lg  
+- chai-text-xl  
+- chai-text-2xl  
 
-Border: chai-border-transparent, chai-border-black, chai-border-blue-500, chai-border-yello-600
+**Weight:**  
+- chai-font-normal  
+- chai-font-semibold  
+- chai-font-bold  
 
-Flexbox & Grid
-Display: chai-flex, chai-inline-flex, chai-grid
+**Line Height:**  
+- chai-leading-none  
+- chai-leading-tight  
+- chai-leading-normal  
 
-Direction: chai-flex-row, chai-flex-col
+**Alignment:**  
+- chai-text-center  
+- chai-text-left  
 
-Align Items: chai-items-start, chai-items-center, chai-items-end
+---
 
-Justify Content: chai-justify-start, chai-justify-center, chai-justify-between
+### Colors
 
-Grid Columns: chai-grid-cols-1, chai-grid-cols-2, chai-grid-cols-3
+**Background:**  
+- chai-bg-transparent  
+- chai-bg-white  
+- chai-bg-black  
+- chai-bg-blue-500  
+- chai-bg-red-500  
 
-Layout & Sizing
-Display: chai-block, chai-inline-block, chai-hidden
+**Text:**  
+- chai-text-white  
+- chai-text-black  
+- chai-text-blue-500  
+- chai-text-red-500  
 
-Position: chai-absolute, chai-relative, chai-fixed
+**Border:**  
+- chai-border-transparent  
+- chai-border-black  
+- chai-border-blue-500  
+- chai-border-yello-600  
 
-Width: chai-w-full, chai-w-screen, chai-max-w-md, chai-max-w-lg
+---
 
-Height: chai-h-full, chai-h-screen
+### Flexbox & Grid
 
-Overflow: chai-overflow-hidden, chai-overflow-y-auto
+**Display:**  
+- chai-flex  
+- chai-inline-flex  
+- chai-grid  
 
-Borders
-Width: chai-border, chai-border-2, chai-border-4, chai-border-none
+**Direction:**  
+- chai-flex-row  
+- chai-flex-col  
 
-Radius: chai-rounded-sm, chai-rounded, chai-rounded-md, chai-rounded-lg, chai-rounded-full
+**Align Items:**  
+- chai-items-start  
+- chai-items-center  
+- chai-items-end  
 
-Rings: chai-ring-1, chai-ring-2
+**Justify Content:**  
+- chai-justify-start  
+- chai-justify-center  
+- chai-justify-between  
 
-Effects
-Shadows: chai-shadow-sm, chai-shadow, chai-shadow-md
+**Grid Columns:**  
+- chai-grid-cols-1  
+- chai-grid-cols-2  
+- chai-grid-cols-3  
 
-Opacity: chai-opacity-0, chai-opacity-50, chai-opacity-100
+---
 
-Blur: chai-blur-sm, chai-blur
+### Layout & Sizing
 
-📄 License
+**Display:**  
+- chai-block  
+- chai-inline-block  
+- chai-hidden  
+
+**Position:**  
+- chai-absolute  
+- chai-relative  
+- chai-fixed  
+
+**Width:**  
+- chai-w-full  
+- chai-w-screen  
+- chai-max-w-md  
+- chai-max-w-lg  
+
+**Height:**  
+- chai-h-full  
+- chai-h-screen  
+
+**Overflow:**  
+- chai-overflow-hidden  
+- chai-overflow-y-auto  
+
+---
+
+### Borders
+
+**Width:**  
+- chai-border  
+- chai-border-2  
+- chai-border-4  
+- chai-border-none  
+
+**Radius:**  
+- chai-rounded-sm  
+- chai-rounded  
+- chai-rounded-md  
+- chai-rounded-lg  
+- chai-rounded-full  
+
+**Rings:**  
+- chai-ring-1  
+- chai-ring-2  
+
+---
+
+### Effects
+
+**Shadows:**  
+- chai-shadow-sm  
+- chai-shadow  
+- chai-shadow-md  
+
+**Opacity:**  
+- chai-opacity-0  
+- chai-opacity-50  
+- chai-opacity-100  
+
+**Blur:**  
+- chai-blur-sm  
+- chai-blur  
+
+---
+
+## 📄 License
+
 This project is licensed under the ISC License.
-
-
-Would you like me to walk through how to push this update to npm as version `1.0.3` so your package homepage updates immediately?
