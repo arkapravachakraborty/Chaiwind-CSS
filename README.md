@@ -41,13 +41,14 @@ import App from './App.jsx';
 import { initDOMStyles } from 'chaiwinddev';
 
 // Initialize the engine before React renders
-initDOMStyles();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
 );
+initDOMStyles();
+
 ```
 Then, use the chai- prefixed classes directly inside your components:
 

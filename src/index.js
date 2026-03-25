@@ -32,7 +32,7 @@ export function initDOMStyles() {
             if (mutation.type === 'childList') {
                 mutation.addedNodes.forEach(node => {
                     if (node.nodeType === 1 && node.hasAttribute('class')) {
-                        applyStyle(node.node.getAttribute('class'));
+                        applyStyle(node, node.getAttribute('class'));
                     }
                     // Check the children of newly added
                     if (node.nodeType === 1) {
